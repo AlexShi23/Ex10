@@ -28,8 +28,7 @@ std::string infix2postfix(std::string infix) {
         out.push_back(' ');
       }
       oper.pop();
-    }
-    else if (pr > -1) {
+    } else if (pr > -1) {
       while (!oper.isEmpty() && prior(oper.get()) >= pr) {
         out.push_back(oper.pop());
         out.push_back(' ');
@@ -48,7 +47,7 @@ std::string infix2postfix(std::string infix) {
   }
   out.pop_back();
   return out;
-}	
+}
 
 int prior(char a) {
   switch (a) {

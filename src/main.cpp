@@ -1,11 +1,9 @@
 // Copyright 2021 Shirokov Alexander
 
-#include "postfix.h"
 #include <iostream>
-#include <string>
+#include "postfix.h"
 
-int main()
-{
+int main() {
   std::string inf1 = "8 / 2 * (2 + 2)";
   std::string postf1 = infix2postfix(inf1);
   std::cout << postf1 << std::endl;  // 8 2 / 2 2 + *
